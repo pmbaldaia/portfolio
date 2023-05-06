@@ -3,6 +3,7 @@ import Fade from "react-reveal";
 
 class Footer extends Component {
   render() {
+    const today = new Date(); 
     if (!this.props.data) return null;
 
     const networks = this.props.data.social.map(function (network) {
@@ -23,7 +24,7 @@ class Footer extends Component {
               <ul className="social-links">{networks}</ul>
 
               <ul className="copyright">
-                <li>&copy; Copyright 2022 </li>
+                <li>&copy; Copyright {today.getFullYear()} </li>
                 <li>
                   Design by{" Pedro Baldaia "}
                 </li>
