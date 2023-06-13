@@ -1,70 +1,39 @@
-import React, { Component } from "react";
-import Fade from "react-reveal";
+import {
+  Divider,
+  Stack,
+  Text,
+  Container,
+  Box,
+  HStack,
+} from "@chakra-ui/react";
+import ProfileArray from "./ProfileArray";
 
-class About extends Component {
-  render() {
-    if (!this.props.data) return null;
-
-    const name = this.props.data.name;
-    const profilepic = "images/" + this.props.data.image;
-    const bio = this.props.data.bio;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
-    const phone = this.props.data.phone;
-    const email = this.props.data.email;
-    const email2 = this.props.data.email2;
-    const resumeDownload = this.props.data.resumedownload;
-
+export default function About({ color }) {
+  const profile = ProfileArray();
     return (
-      <section id="about">
-        <Fade duration={1000}>
-          <div className="row">
-            <div className="three columns">
-              <img
-                className="profile-pic"
-                src={profilepic}
-                alt="Nordic Giant Profile Pic"
-              />
-            </div>
-            <div className="nine columns main-col aboutme">
-              <h2>About me</h2>
-
-              <p>{bio}</p>
-              <div className="row">
-                <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-                    <span>{name}</span>
-                    <br />
-                    <span>
-                      {street} {city}, {zip}
-                      <br />
-                      {state}
-                    </span>
-                    <br />
-                    <span>{phone}</span>
-                    <br />
-                    <span>{email}</span>
-                    <br />
-                    <span>{email2}</span>
-                  </p>
-                </div>
-                <div className="columns download">
-                  <p>
-                    <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Fade>
-      </section>
+      <>
+        <Container maxW={"3xl"} id="about">
+          <Stack
+            as={Box}
+            textAlign={"center"}
+            spacing={{ base: 8, md: 14 }}
+            pb={{ base: 20, md: 36 }}
+          >
+            <Stack align="center" direction="row" px={4}>
+              <HStack mx={4}>
+                <Text color={`${color}.400`} fontWeight={800}>
+                  01
+                </Text>
+                <Text fontWeight={800}>ABOUT</Text>
+              </HStack>
+              <Divider orientation="horizontal" />
+            </Stack>
+            <Text color={"gray.600"} fontSize={"xl"} px={4}>
+              {profile.about}
+            </Text>
+          </Stack>
+        </Container>
+      </>
     );
-  }
 }
 
-export default About;
