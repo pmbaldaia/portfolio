@@ -16,7 +16,7 @@ function App() {
     // Simulate a delay of 2 seconds before hiding the loading screen
     setTimeout(() => {
       setIsLoading(false);
-    }, 20);
+    }, 1000);
   }, []);
 
   return (
