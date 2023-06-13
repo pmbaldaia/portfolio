@@ -18,11 +18,7 @@ export default function Header({ color }) {
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
   const linkedin = () => {
-    window.open(
-                `${profile.linkedin}`,
-                "_blank",
-                "noreferrer,noopener"
-              );
+    window.open(`${profile.linkedin}`, "_blank", "noreferrer,noopener");
   };
   return (
     <>
@@ -74,7 +70,7 @@ export default function Header({ color }) {
               }}
               onClick={linkedin}
             >
-             Let's talk
+              Let's talk
             </Button>
             <Button
               variant={"link"}
