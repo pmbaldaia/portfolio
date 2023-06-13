@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Navbar from "./components/NavBar";
-import Header from "./components/Header";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Loading from "./components/Loading/loading";
-
+import Header from "../src/components/Header";
+import About from "../src/components/About";
+import Experience from "../src/components/Experience";
+import Projects from "../src/components/Projects";
+import Contact from "../src/components/Contact";
+import Footer from "../src/components/Footer";
+import Loading from "../src/components/Loading/loading";
+import NavBar from "../src/components/NavBar";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const color = "blue";
@@ -28,7 +27,7 @@ function App() {
         </div>
       ) : (
         <>
-          <Navbar color={color} />
+          <NavBar color={color} />
           <Header color={color} />
           <About color={color} />
           <Experience color={color} />
