@@ -165,5 +165,3 @@ export default function Nav({ color }) {
     </>
   );
 }
-
-export default function NavBar();
