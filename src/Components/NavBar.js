@@ -19,7 +19,7 @@ import { useState } from "react";
 import ProfileArray from "./ProfileArray";
 const TbIcons = require("react-icons/tb");
 
-export default function NavBar({ color }) {
+export default function Nav({ color }) {
   const profile = ProfileArray();
   const colors = {
     blue: "#3182CE",
@@ -165,3 +165,5 @@ export default function NavBar({ color }) {
     </>
   );
 }
+
+export default function NavBar();
