@@ -37,3 +37,5 @@ export default function About({ color }) {
     );
 }
 
+export default function About();
+
