@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 import Loading from "./components/Loading/loading.js";
-import NavBar from "./components/NavBar.js";
+import Navbar from "./components/NavBar.js";
 import Header from "./components/Header.js";
 import About from "./components/About.js";
 import Experience from "./components/Experience.js";
@@ -29,7 +29,7 @@ function App() {
         </div>
       ) : (
         <>
-          <NavBar color={color} />
+          <Navbar color={color} />
           <Header color={color} />
           <About color={color} />
           <Experience color={color} />
