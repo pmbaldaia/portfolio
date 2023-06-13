@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import Navbar from './components/NavBar';
-import Header from './components/Header';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Navbar from "./components/NavBar";
+import Header from "./components/Header";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Loading from "./components/Loading/loading";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +24,7 @@ function App() {
     <>
       {isLoading ? (
         <div className="loading">
-         <p>LOADING...</p>
+          <Loading />
         </div>
       ) : (
         <>
