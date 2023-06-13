@@ -17,7 +17,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-   
+    /* "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build", */
     "start": "npm start",
     "build": "npm run build --force",
     "test": "react-scripts test",
