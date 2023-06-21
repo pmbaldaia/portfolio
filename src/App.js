@@ -15,7 +15,6 @@ function App() {
   const color = "blue";
 
   useEffect(() => {
-    // Simulate a delay of 2 seconds before hiding the loading screen
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
