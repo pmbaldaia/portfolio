@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
-import { InstagramLogo, FacebookLogo } from "@phosphor-icons/react";
+import { InstagramLogo, FacebookLogo, Gear } from "@phosphor-icons/react";
 
 const PaginaManutencao = () => {
   const [loading, setLoading] = useState(true);
@@ -23,6 +23,7 @@ const PaginaManutencao = () => {
               </div>
             ) : (
               <div className="maintenance-content">
+                <Spinner animation="grow" variant="primary" className="lg" />
                 <h1>Estamos a preparar algo incrível!</h1>
                 <p>
                   Estamos a trabalhar arduamente para trazer novidades
