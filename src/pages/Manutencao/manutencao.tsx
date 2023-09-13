@@ -23,7 +23,7 @@ const PaginaManutencao = () => {
               </div>
             ) : (
               <div className="maintenance-content">
-                <Spinner animation="grow" variant="primary" className="lg" />
+                <Spinner animation="grow" variant="primary" />
                 <h1>Estamos a preparar algo incrível!</h1>
                 <p>
                   Estamos a trabalhar arduamente para trazer novidades
