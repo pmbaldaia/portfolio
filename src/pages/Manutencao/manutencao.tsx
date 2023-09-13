@@ -12,7 +12,7 @@ const PaginaManutencao = () => {
   }, []);
 
   return (
-    <div className="maintenance-page d-flex justify-content-center align-items-center vh-100 bg-black text-white">
+    <div className="maintenance-page d-flex justify-content-center align-items-center vh-100 bg-dark text-white">
       <div className="container">
         <div className="row">
           <div className="col-md-8 offset-md-2 text-center">
