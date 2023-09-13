@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
-import { InstagramLogo, FacebookLogo, Gear } from "@phosphor-icons/react";
+import { InstagramLogo, FacebookLogo } from "@phosphor-icons/react";
 
 const PaginaManutencao = () => {
   const [loading, setLoading] = useState(true);
