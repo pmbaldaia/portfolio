@@ -1,14 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import PaginaManutencao from "./pages/Manutencao/manutencao";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>VAMOS VER SE AGORA QUE FICA FEITO</p>
-      </header>
-    </div>
+    <main className="vh-100">
+      <PaginaManutencao />
+    </main>
   );
 }
 
